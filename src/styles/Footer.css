@@ -1,0 +1,13 @@
+.foot{
+    margin: auto;
+    width: 95%;
+    height: auto;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.foot-text{
+    font-family: var(--main-font-family);
+    font-size: var(--footer-font-size);
+}

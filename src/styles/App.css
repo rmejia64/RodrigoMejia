@@ -1,0 +1,44 @@
+@font-face {
+  src: url("https://use.typekit.net/agq7tel.css");
+  font-family: "roboto", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ocr-a-std", monospace;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://use.typekit.net/agq7tel.css");
+}
+
+:root {
+  --main-bg-color: #f0f8ff;
+  --main-font-family: "ocr-a-std";
+  --header-font-size: 60px;
+  --header-font-size-tablet: 50px;
+  --header-font-size-mobile: 40px;
+  --subheader-font-size: 30px;
+  --subheader-font-size-tablet: 20px;
+  --subheader-font-size-mobile: 18px;
+  --main-font-size: 14px;
+  --main-font-size-mobile: 12px;
+  --footer-font-size: 12px;
+  --icon-size: 30px;
+  --main-font-color: black;
+  --link-hover-color: yellow;
+}
+
+body,
+html {
+  margin: 0px auto;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--main-bg-color);
+  min-width: 320px;
+}
+
+.wrapper {
+  padding: 20px;
+  height: 100%;
+}
