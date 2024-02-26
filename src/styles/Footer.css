@@ -1,6 +1,7 @@
 .foot{
     margin: auto;
     width: 95%;
+    min-width: 350px;
     height: auto;
     text-align: left;
     padding-top: 20px;

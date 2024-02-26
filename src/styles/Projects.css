@@ -1,0 +1,31 @@
+.cards-two {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.project-link{
+    font-family: var(--main-font-family);
+    font-size: var(--footer-font-size);
+    color: var(--main-font-color);
+    text-decoration: none;
+    width: 30%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: auto;
+}
+.project-link:hover {
+    -webkit-text-stroke: 0.25px yellow;
+}
+
+.project{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,34 @@
+.content-two {
+    width: 95%;
+    min-width: 350px;
+    height: 500px;
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+    overflow: scroll;
+}
+
+.title-two {
+    font-family: var(--main-font-family);
+    font-size: var(--header-font-size-tablet);
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cards {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.design{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+}
