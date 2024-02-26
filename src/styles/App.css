@@ -16,8 +16,9 @@
   --subheader-font-size-mobile: 16px;
   --main-font-size: 16px;
   --main-font-size-mobile: 12px;
-  --footer-font-size: 12px;
+  --footer-font-size: 10px;
   --icon-size: 30px;
+  --icon-size-mobile: 20px;
   --main-font-color: black;
   --link-hover-color: yellow;
 }

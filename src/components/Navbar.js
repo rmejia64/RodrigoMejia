@@ -23,11 +23,6 @@ function Navbar({ setCurrentState }) {
 					></img>
 				</a>
 			</div>
-			<img
-				className="menu-button"
-				alt="Menu"
-				src={require("../assets/menu.png")}
-			/>
 
 			<div className="page-links">
 				<p className="link" onClick={() => setCurrentState("Home")}>
@@ -39,18 +34,6 @@ function Navbar({ setCurrentState }) {
 				<p className="link" onClick={() => setCurrentState("Projects")}>
 					Projects
 				</p>
-				<a className="link" href="mailto: rmejia.g36@gmail.com">
-					<div class="tooltip">
-						Contact
-						<span class="tooltiptext">Send Email</span>
-					</div>
-				</a>
-				<a className="link" target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1vUExRik8I88c5mOwfQ7xHa0P09HETlgmbNn68igSKvQ/edit?usp=sharing">
-					<div class="tooltip">
-						Resume
-						<span class="tooltiptext">Google Drive</span>
-					</div>
-				</a>
 			</div>
 		</div>
 	);

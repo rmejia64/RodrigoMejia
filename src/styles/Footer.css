@@ -5,9 +5,43 @@
     text-align: left;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foot-links{
+    width: 40%;
+    height: auto;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: right;
 }
 
 .foot-text{
     font-family: var(--main-font-family);
     font-size: var(--footer-font-size);
+}
+
+.foot-link {
+    text-decoration: none;
+    height: auto;
+    margin-left: 20px;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+    cursor: pointer;
+}
+
+.foot-link:hover {
+    -webkit-text-stroke: 0.25px yellow;
+}
+
+@media screen and (max-width: 800px) {
+    .foot-link {
+        font-size: var(--main-font-size-mobile);
+    }
 }
