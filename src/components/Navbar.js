@@ -33,8 +33,8 @@ function Navbar({ setCurrentState }) {
 				<p className="link" onClick={() => setCurrentState("Home")}>
 					Home
 				</p>
-				<p className="link" onClick={() => setCurrentState("About")}>
-					About
+				<p className="link" onClick={() => setCurrentState("Designs")}>
+					Designs
 				</p>
 				<p className="link" onClick={() => setCurrentState("Projects")}>
 					Projects

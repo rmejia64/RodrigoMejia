@@ -2,7 +2,7 @@ import "./styles/App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import About from "./components/About";
+import Designs from "./components/Designs";
 import Projects from "./components/Projects";
 
 import { useState } from "react";
@@ -18,8 +18,8 @@ function App() {
 				component = <Home />;
 				break;
 
-			case "About":
-				component = <About />;
+			case "Designs":
+				component = <Designs />;
 				break;
 
 			case "Projects":
