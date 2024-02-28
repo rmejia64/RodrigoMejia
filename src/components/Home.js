@@ -1,5 +1,5 @@
 import "../styles/Home.css";
-import self from "../assets/self_simple.png";
+import self from "../assets/self_simplest.png";
 
 function Home() {
 	return (

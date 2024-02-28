@@ -16,7 +16,7 @@ function Projects() {
 						alt="Drink Raja"
 						src={require("../assets/raja-logo.png")}
 					/>
-					<br></br>A preliminary webite for Raja Chai Latte.
+					<p className="project-text">A preliminary webite for Raja Chai Latte.</p>
 				</a>
 				<a
 					className="project-link"
@@ -29,8 +29,8 @@ function Projects() {
 						alt="Zepeda Dog Services"
 						src={require("../assets/zepeda.png")}
 					/>
-					<br></br>The official website for Zepeda Dog Services. A Dog training, walking,
-					and daycare service.
+					<p className="project-text">The official website for Zepeda Dog Services. A Dog training, walking,
+					and daycare service.</p>
 				</a>
 				<a
 					className="project-link"
@@ -43,8 +43,8 @@ function Projects() {
 						alt="Zaragoza Construction"
 						src={require("../assets/zaragoza.png")}
 					/>
-					<br></br>The website for Zaragoza Construction. A local home rennovation
-					service.
+					<p className="project-text">The website for Zaragoza Construction. A local home rennovation
+					service.</p>
 				</a>
 			</div>
 		</div>
