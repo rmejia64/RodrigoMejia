@@ -28,8 +28,9 @@
     box-shadow: 2px 2px 10px;
 
 }
-.project-link:hover {
-    -webkit-text-stroke: 0.25px yellow;
+
+.project-link:hover{
+    box-shadow: 4px 4px 20px;
 }
 
 .project{

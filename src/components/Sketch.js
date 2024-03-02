@@ -32,9 +32,7 @@ Mover.prototype.applyForce = function (f) {
 
 Mover.prototype.render = function () {
 	this.p.push();
-	this.p.strokeWeight(2);
 	this.p.fill(this.clr); // Use the clr property for the fill color
-	this.p.stroke(this.stk);
 	this.p.ellipse(this.loc.x, this.loc.y, this.rad, this.rad);
 	this.p.pop();
 };
@@ -89,8 +87,7 @@ function Boid(p, repellers, attractors) {
 		for (let i = 0; i < this.attractors.length; i++) {
 			this.force2 = p5.Vector.sub(this.loc, this.attractors[i].loc);
 			this.force2.normalize();
-			this.force2.mult(0.05);
-
+			this.force2.mult(0.08);
 			// If in range of a1--follow!
 			if (this.loc.dist(this.attractors[i].loc) < 100) {
 				this.applyForce(this.force2);
@@ -106,7 +103,7 @@ function Boid(p, repellers, attractors) {
 		for (let i = 0; i < this.repellers.length; i++) {
 			this.force = p5.Vector.sub(this.loc, this.repellers[i].loc);
 			this.force.normalize();
-			this.force.mult(0.1);
+			this.force.mult(0.08);
 			// If in range of r1--run for your life!
 			if (this.loc.dist(this.repellers[i].loc) < 50) {
 				this.applyForce(this.force);
@@ -129,8 +126,8 @@ function Attractor(p) {
 
 	// Additional properties specific to Attractor
 	this.rad = 10; // Set the radius for the Attractor
-	this.clr = this.p.color(255); // Set the color for the Repeller
-	this.stk = this.p.color(0, 0, 100);
+	this.clr = this.p.color(0, 0, 200, 80); // Set the color for the Repeller
+	this.stk = this.p.color(0, 0, 200);
 	this.vel = this.p.createVector(this.p.random(-3, 3), this.p.random(-3, 3));
 }
 
@@ -186,8 +183,8 @@ function Repeller(p) {
 
 	// Additional properties specific to Repeller
 	this.rad = 10; // Set the radius for the Repeller
-	this.clr = this.p.color(255); // Set the color for the Repeller
-	this.stk = this.p.color(100, 0, 0);
+	this.clr = this.p.color(200, 0, 0, 80); // Set the color for the Repeller
+	this.stk = this.p.color(200, 0, 0);
 	this.vel = this.p.createVector(this.p.random(-3, 3), this.p.random(-3, 3));
 }
 
