@@ -15,7 +15,7 @@ function Designs() {
 				<img
 					className="Design_Img"
 					alt="Redesign of SCU Bowling Club website"
-					src={require("../assets/SCU_Bowling_Club.png")}
+					src={require("../assets/bowling.png")}
 				/>
 				<img
 					className="Design_Img"
