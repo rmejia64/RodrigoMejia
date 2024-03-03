@@ -1,26 +1,28 @@
 @font-face {
   font-family: "ocr-a-std", monospace;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
   src: url("https://use.typekit.net/agq7tel.css");
 }
 
 :root {
-  --main-bg-color: #f0f8ff;
+  --main-bg-color: rgba(240, 248, 255, 0.9);
+  --main-border-color: black;
   --main-font-family: "ocr-a-std";
+  --main-font-color: black;
+  --main-hover-color: yellow;
+  --main-font-size: 16px;
+  --main-font-size-tablet: 14px;
+  --main-font-size-mobile: 12px;
   --header-font-size: 60px;
   --header-font-size-tablet: 50px;
   --header-font-size-mobile: 40px;
-  --subheader-font-size: 24px;
-  --subheader-font-size-tablet: 18px;
-  --subheader-font-size-mobile: 16px;
-  --main-font-size: 16px;
-  --main-font-size-mobile: 12px;
+  --subheader-font-size: 22px;
+  --subheader-font-size-tablet: 20px;
+  --subheader-font-size-mobile: 18px;
   --footer-font-size: 10px;
   --icon-size: 30px;
   --icon-size-mobile: 20px;
-  --main-font-color: black;
-  --link-hover-color: yellow;
 }
 
 body,
@@ -46,7 +48,7 @@ html {
   animation: fade forwards;
   animation-duration: 1s;
   animation-delay: 1s;
-  margin-top: 300px;
+  margin-top: 40vh;
 }
 
 @keyframes fade {

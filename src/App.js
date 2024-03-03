@@ -13,7 +13,6 @@ function App() {
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		// Simulate a delay for the purpose of the example
 		const timeout = setTimeout(() => {
 			setLoading(false);
 		}, 2000);

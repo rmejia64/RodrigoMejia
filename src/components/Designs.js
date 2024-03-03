@@ -4,21 +4,21 @@ import design1 from "../assets/Bill_Wilson_Center_Redesign.png";
 
 function Designs() {
 	return (
-		<div className="content-two">
-			<p className="title-two">Designs</p>
-			<div className="cards">
+		<div className="Design_Section">
+			<p className="Design_Header">Designs</p>
+			<div className="Design_Container">
 				<img
-					className="design"
+					className="Design_Img"
 					alt="Redesign of Bill Wilson Center website"
 					src={design1}
 				/>
 				<img
-					className="design"
+					className="Design_Img"
 					alt="Redesign of SCU Bowling Club website"
 					src={require("../assets/SCU_Bowling_Club.png")}
 				/>
 				<img
-					className="design"
+					className="Design_Img"
 					alt="Redesign of Semillas De Amor website"
 					src={require("../assets/Semillias_Website.png")}
 				/>
