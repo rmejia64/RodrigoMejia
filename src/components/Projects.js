@@ -10,36 +10,6 @@ function Projects() {
 						className="Project_Link"
 						target="_blank"
 						rel="noreferrer"
-						href="https://drinkraja.com"
-					>
-						<img
-							className="Project_Img"
-							alt="Drink Raja"
-							src={require("../assets/raja.png")}
-						/>
-						<div className="Icon_Div">
-							<img
-								className="Project_Icon"
-								alt="React"
-								src={require("../assets/react.png")}
-							/>
-							<img
-								className="Project_Icon"
-								alt="Firebase"
-								src={require("../assets/firebase.png")}
-							/>
-						</div>
-						<p className="Project_Text">
-							The official launchpage for Raja Chai Latte. A local Chai
-							beverage.
-						</p>
-					</a>
-				</div>
-				<div className="Project_Div">
-					<a
-						className="Project_Link"
-						target="_blank"
-						rel="noreferrer"
 						href="https://zepedadogs.web.app"
 					>
 						<img
@@ -47,6 +17,7 @@ function Projects() {
 							alt="Zepeda Dog Services"
 							src={require("../assets/zepeda.png")}
 						/>
+						<p className="Img_Title">Zepeda Dog Services</p>
 						<div className="Icon_Div">
 							<img
 								className="Project_Icon"
@@ -70,13 +41,14 @@ function Projects() {
 						className="Project_Link"
 						target="_blank"
 						rel="noreferrer"
-						href="https://www.zaragozasconstruction.com"
+						href="https://drinkraja.com"
 					>
 						<img
 							className="Project_Img"
-							alt="Zaragoza Construction"
-							src={require("../assets/zaragoza.png")}
+							alt="Drink Raja"
+							src={require("../assets/raja.png")}
 						/>
+						<p className="Img_Title">Raja Chai Latte</p>
 						<div className="Icon_Div">
 							<img
 								className="Project_Icon"
@@ -90,8 +62,8 @@ function Projects() {
 							/>
 						</div>
 						<p className="Project_Text">
-							The website for Zaragoza Construction. A local home rennovation
-							service.
+							The official launchpage for Raja Chai Latte. A local Chai
+							beverage.
 						</p>
 					</a>
 				</div>
@@ -107,6 +79,7 @@ function Projects() {
 							alt="Banco De Alimentos: Cali"
 							src={require("../assets/bda.png")}
 						/>
+						<p className="Img_Title">BDA:Cali App</p>
 						<div className="Icon_Div">
 							<img
 								className="Project_Icon"
@@ -136,6 +109,7 @@ function Projects() {
 							alt="StudyBuddy"
 							src={require("../assets/study.png")}
 						/>
+						<p className="Img_Title">StudyBuddy</p>
 						<div className="Icon_Div">
 							<img
 								className="Project_Icon"
@@ -151,6 +125,32 @@ function Projects() {
 						<p className="Project_Text">
 							StudyBuddy is a mobile application that provides an effective and
 							entertaining way of reviewing material.
+						</p>
+					</a>
+				</div>
+				<div className="Project_Div">
+					<a
+						className="Project_Link"
+						target="_blank"
+						rel="noreferrer"
+						href="https://www.zaragozasconstruction.com"
+					>
+						<img
+							className="Project_Img"
+							alt="Zaragoza Construction"
+							src={require("../assets/zaragoza.png")}
+						/>
+						<p className="Img_Title">Zaragoza Construction</p>
+						<div className="Icon_Div">
+							<img
+								className="Project_Icon"
+								alt="SquareSpace"
+								src={require("../assets/squarespace.png")}
+							/>
+						</div>
+						<p className="Project_Text">
+							The website for Zaragoza Construction. A local home rennovation
+							service.
 						</p>
 					</a>
 				</div>

@@ -1,5 +1,7 @@
 import "../styles/Footer.css";
 
+import resume from "../assets/Rodrigo_Mejia_Resume.pdf";
+
 function Footer() {
 	return (
 		<div className="footer">
@@ -7,7 +9,7 @@ function Footer() {
 			<div className="footer-links">
 				<a className="footer-link" href="mailto: me@rodrigomejia.com">
 					<div className="tooltip">
-						Contact
+						Email &#8593;
 						<span className="tooltiptext">Send Email</span>
 					</div>
 				</a>
@@ -15,11 +17,12 @@ function Footer() {
 					className="footer-link"
 					target="_blank"
 					rel="noreferrer"
-					href="https://docs.google.com/document/d/1vUExRik8I88c5mOwfQ7xHa0P09HETlgmbNn68igSKvQ/edit?usp=sharing"
+					href={resume}
+					download={"Rodrigo_Mejia_Resume.pdf"}
 				>
 					<div className="tooltip">
-						Resume
-						<span className="tooltiptext">Google Drive</span>
+						Resume &#8595;
+						<span className="tooltiptext">Download</span>
 					</div>
 				</a>
 			</div>

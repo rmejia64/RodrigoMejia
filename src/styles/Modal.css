@@ -1,0 +1,35 @@
+.Modal_Container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    /* Set a max-width if needed */
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid var(--main-border-color);
+    z-index: 1;
+}
+
+.large_design {
+    width: 100%;
+    height: auto;
+}
+
+.closeBtn {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+    border: 2px solid var(--main-border-color);
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+    font-size: var(--footer-font-size);
+}

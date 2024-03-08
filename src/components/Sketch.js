@@ -250,12 +250,13 @@ const Sketch = () => {
       const repellers = [];
       const numRep = 5;
       const canvasWidth = window.innerWidth;
-      const canvasHeight = window.innerHeight;
+      const canvasHeight = 500;
 
       p.setup = () => {
         let cnv = p.createCanvas(canvasWidth, canvasHeight).parent(sketchRef.current);
 		cnv.position(0, 0);
         cnv.style("z-index", "-1");
+		cnv.style("margin-top", "80px");
 
         // Assign prototypes before creating instances
         Repeller.prototype = Object.create(Mover.prototype);

@@ -1,8 +1,7 @@
 .Design_Section {
-    width: 95%;
+    width: 90vw;
     min-width: 350px;
-    height: 65vh;
-    min-height: 500px;
+    height: 500px;
     margin: auto;
     background-color: var(--main-bg-color);
     border: 2px solid var(--main-border-color);
@@ -12,31 +11,95 @@
 
 .Design_Header {
     font-family: var(--main-font-family);
-    font-size: var(--header-font-size-tablet);
-    height: 50px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    font-size: var(--header-font-size);
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .Design_Container {
-    width: 95%;
+    width: 90%;
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     margin: auto;
     justify-content: space-evenly;
 }
 
+.Design_Div{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: flex; flex-direction: row;
+    align-items: top;
+    justify-content: space-around;
+    margin: auto;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    box-shadow: 1px 1px 10px;
+    border: 2px solid var(--main-border-color);
+}
+
 .Design_Img {
-    width: 80%;
+    width: 60%;
     max-width: 500px;
     height: auto;
     margin: auto;
-    margin-bottom: 50px;
+    margin-top: 0;
+    margin-right: 10px;
     box-shadow: 2px 2px 10px;
 }
 
 .Design_Img:hover{
-    box-shadow: 4px 4px 20px;
+    box-shadow: 1px 1px 20px;
 }
+
+.logos_div{
+    width: auto;
+    max-width: 500px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-left: auto;
+}
+
+.Design_Text{
+    font-family: var(--main-font-family);
+    width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+    .Design_Container {
+        flex-direction: column;
+    }
+
+    .Design_Header {
+      font-size: var(--header-font-size-tablet);
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .Design_Container {
+        flex-direction: column;
+    }
+    
+    .Design_Header {
+      font-size: var(--header-font-size-mobile);
+    }
+  }

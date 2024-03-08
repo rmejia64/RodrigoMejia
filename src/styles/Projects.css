@@ -1,8 +1,7 @@
 .Projects_Section {
     width: 90vw;
-    height: 60vh;
+    height: 500px;
     min-width: 350px;
-    min-height: 500px;
     margin: auto;
     background-color: var(--main-bg-color);
     border: 2px solid var(--main-border-color);
@@ -18,17 +17,19 @@
 }
 
 .Project_Container {
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     margin: auto;
     justify-content: space-evenly;
 }
 
-.Project_Div{
-    width: 80%;
+.Project_Div {
+    width: 90%;
     max-width: 400px;
     height: auto;
     margin-top: 0;
@@ -36,27 +37,35 @@
     background-color: white;
     border: 2px solid var(--main-border-color);
     box-shadow: 1px 1px 10px;
+    overflow: hidden;
 }
 
-.Project_Div:hover{
+.Project_Div:hover {
     box-shadow: 1px 1px 20px;
 }
 
-.Project_Link{
-    width: 100%;
+.Project_Link {
+    height: auto;
+    width: auto;
     text-align: center;
     text-decoration: none;
 }
 
-.Project_Img{
+.Project_Img {
     width: 100%;
-    max-width: 400px;
     height: auto;
-    filter: brightness(70%);
+}
+
+.Project_Div:hover .Project_Img{
+    filter: brightness(20%);
+}
+
+.Project_Div:hover .Img_Title{
+    opacity: 1;
 }
 
 
-.Project_Text{
+.Project_Text {
     font-family: var(--main-font-family);
     font-size: var(--footer-font-size);
     color: var(--main-font-color);
@@ -65,29 +74,48 @@
     padding: 20px;
 }
 
-.Icon_Div{
+.Icon_Div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     width: 20%;
     margin: auto;
-    padding-top: 10px;
 }
 
-.Project_Icon{
+.Project_Icon {
     width: 30px;
     height: auto;
 }
 
+.Img_Title{
+    position: relative;
+    top: -30px;
+    width: auto;
+    margin: 0;
+    font-family: var(--main-font-family);
+    font-size: var(--subheader-font-size-mobile);
+    color: var(--secondary-font-color);
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    opacity: 0;
+}
 @media screen and (max-width: 900px) {
-    .Project_Header {
-      font-size: var(--header-font-size-tablet);
+    .Project_Container {
+        flex-direction: column;
     }
-  }
-  
-  @media screen and (max-width: 500px) {
+
     .Project_Header {
-      font-size: var(--header-font-size-mobile);
+        font-size: var(--header-font-size-tablet);
     }
-  }
+}
+
+@media screen and (max-width: 500px) {
+    .Project_Container {
+        flex-direction: column;
+    }
+
+    .Project_Header {
+        font-size: var(--header-font-size-mobile);
+    }
+}
