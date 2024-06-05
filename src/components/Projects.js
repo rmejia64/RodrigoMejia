@@ -1,6 +1,38 @@
+import React, { useEffect } from "react";
 import "../styles/Projects.css";
 
+const images = [
+	require("../assets/zepeda.png"),
+	require("../assets/raja.png"),
+	require("../assets/bda.png"),
+	require("../assets/study.png"),
+	require("../assets/zaragoza.png"),
+	require("../assets/react.png"),
+	require("../assets/firebase.png"),
+	require("../assets/squarespace.png"),
+];
+
+function preloadImages(imageArray) {
+	return new Promise((resolve) => {
+		const promises = imageArray.map((src) => {
+			return new Promise((res) => {
+				const img = new Image();
+				img.src = src;
+				img.onload = res;
+				img.onerror = res; // Resolve even if there's an error to not hang the loading
+			});
+		});
+		Promise.all(promises).then(resolve);
+	});
+}
+
 function Projects() {
+	useEffect(() => {
+		preloadImages(images).then(() => {
+			console.log("All images have been preloaded");
+		});
+	}, []);
+
 	return (
 		<div className="Projects_Section">
 			<p className="Project_Header">Projects</p>

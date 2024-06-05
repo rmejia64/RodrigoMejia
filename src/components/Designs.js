@@ -1,16 +1,47 @@
+import React, { useEffect, useState } from "react";
 import "../styles/Designs.css";
 import Modal from "./Modal";
-import { useState } from "react";
 
 const zepeda = require("../assets/zepeda-design.png");
 const bowling = require("../assets/bowling.png");
 const bill = require("../assets/Bill_Wilson_Center_Redesign.png");
 const seeds = require("../assets/Semillias_Website.png");
 
+const imagesToPreload = [
+	zepeda,
+	bowling,
+	bill,
+	seeds,
+	require("../assets/zepeda-logo.png"),
+	require("../assets/bowling-logo.png"),
+	require("../assets/bwc-logo.png"),
+	require("../assets/seeds-logo.png")
+];
+
+function preloadImages(imageArray) {
+	return new Promise((resolve) => {
+		const promises = imageArray.map((src) => {
+			return new Promise((res) => {
+				const img = new Image();
+				img.src = src;
+				img.onload = res;
+				img.onerror = res; // Resolve even if there's an error to not hang the loading
+			});
+		});
+		Promise.all(promises).then(resolve);
+	});
+}
+
 function Designs() {
 	const [selectedImage, setImage] = useState("");
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [scrollLock, toggleScrollLock] = useState(false);
+
+	useEffect(() => {
+		preloadImages(imagesToPreload).then(() => {
+			console.log("All images have been preloaded");
+		});
+	}, []);
 
 	const getImage = (image) => {
 		setImage(image);
