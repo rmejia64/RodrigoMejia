@@ -1,6 +1,6 @@
 import "../styles/Footer.css";
 
-import resume from "../assets/Rodrigo_Mejia_Resume.pdf";
+import resume from "../assets/Rodrigo_Mejia_CV.pdf";
 
 function Footer() {
 	return (
