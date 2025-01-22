@@ -7,7 +7,7 @@ function Footer() {
 		<div className="footer">
 			<p className="footer-text">2024 &copy; Rodrigo Mejia</p>
 			<div className="footer-links">
-				<a className="footer-link" href="mailto: me@rodrigomejia.com">
+				<a className="footer-link" href="mailto: rodrigo@rodrigomejia.com">
 					<div className="tooltip">
 						Email &#8593;
 						<span className="tooltiptext">Send Email</span>
@@ -18,7 +18,7 @@ function Footer() {
 					target="_blank"
 					rel="noreferrer"
 					href={resume}
-					download={"Rodrigo_Mejia_Resume.pdf"}
+					download={"Rodrigo_Mejia_CV.pdf"}
 				>
 					<div className="tooltip">
 						Resume &#8595;
