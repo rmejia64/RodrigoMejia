@@ -19,7 +19,7 @@ function preloadImages(imageArray) {
 				const img = new Image();
 				img.src = src;
 				img.onload = res;
-				img.onerror = res; // Resolve even if there's an error to not hang the loading
+				img.onerror = res;
 			});
 		});
 		Promise.all(promises).then(resolve);

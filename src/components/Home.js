@@ -6,11 +6,8 @@ function Home() {
 		<div className="Home_Section">
 			<div className="Home_Text">
 				<p className="Home_Header">Rodrigo Mejia</p>
-				<p className="Home_Subtitle">Developer/Designer</p>
 				<p className="Home_Main">
-					I'm a developer and designer based in the San Francisco Bay Area. I am
-					focused on building responsive human-centered websites and mobile
-					applications.
+					Full-stack software engineer with experience in web development, AI, and NLP. I enjoy building scalable, user-focused applications that make an impact. I love solving problems end-to-end and collaborating with teams to bring ideas to life.
 				</p>
 			</div>
 			<img className="Portrait" src={self} alt="Rodrigo Mejia" />
