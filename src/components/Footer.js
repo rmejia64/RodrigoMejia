@@ -7,7 +7,7 @@ function Footer() {
 		<div className="footer">
 			<p className="footer-text">2025 &copy; Rodrigo Mejia</p>
 			<div className="footer-links">
-				<a className="footer-link" href="mailto: rodrigo@rodrigomejia.com">
+				<a className="footer-link" href="mailto: hire@rodrigomejia.com">
 					<div className="tooltip">
 						Email &#8593;
 						<span className="tooltiptext">Send Email</span>
