@@ -5,9 +5,9 @@ import resume from "../assets/Rodrigo_Mejia_CV.pdf";
 function Footer() {
 	return (
 		<div className="footer">
-			<p className="footer-text">2025 &copy; Rodrigo Mejia</p>
+			<p className="footer-text">{new Date().getFullYear()} &copy; Rodrigo Mejia</p>
 			<div className="footer-links">
-				<a className="footer-link" href="mailto: hire@rodrigomejia.com">
+				<a className="footer-link" href="mailto:hire@rodrigomejia.com">
 					<div className="tooltip">
 						Email &#8593;
 						<span className="tooltiptext">Send Email</span>

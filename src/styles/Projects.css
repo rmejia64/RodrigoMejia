@@ -119,3 +119,48 @@
         font-size: var(--header-font-size-mobile);
     }
 }
+/* Text cover for projects without a screenshot */
+.Project_Cover {
+    aspect-ratio: 16 / 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: var(--secondary-font-color);
+    font-family: var(--main-font-family);
+    padding: 0 20px;
+}
+
+.Cover_Title {
+    font-size: var(--subheader-font-size);
+    margin: 0 0 8px;
+}
+
+.Cover_Sub {
+    font-size: var(--main-font-size-mobile);
+    color: #bdbdbd;
+    margin: 0;
+}
+
+.Project_Div:hover .Project_Cover .Cover_Title {
+    color: var(--main-hover-color);
+}
+
+/* Text tags for stacks without an icon */
+.Tag_Div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin: 12px auto 0;
+    width: 90%;
+}
+
+.Project_Tag {
+    font-family: var(--main-font-family);
+    font-size: var(--footer-font-size);
+    color: var(--main-font-color);
+    border: 1px solid var(--main-border-color);
+    padding: 3px 8px;
+}
