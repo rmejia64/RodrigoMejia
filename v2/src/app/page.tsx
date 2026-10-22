@@ -228,7 +228,7 @@ export default function Home() {
 								</p>
 								<p>
 									Since then I&rsquo;ve shipped React and TypeScript features at Study.com, trained NLP
-									models at TipNow, and turned freelance work into Peninsula Digital Solutions, a bilingual
+									models at TipNow, and in April 2026 turned my freelance work into Peninsula Digital Solutions, a bilingual
 									studio where I own every project from the first call to the monthly report. Running it has
 									taught me to scope carefully, explain technical trade-offs in plain English and Spanish,
 									and keep a site fast years after launch.

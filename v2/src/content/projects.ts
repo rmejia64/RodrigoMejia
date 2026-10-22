@@ -328,7 +328,7 @@ export const projects: Project[] = [
 		group: "build",
 		title: "Peninsula Digital Solutions",
 		kind: "Bilingual web and local marketing studio",
-		year: "2023 to now",
+		year: "2026 to now (freelance since 2023)",
 		role: "Founder and lead developer",
 		stack: ["Next.js", "TypeScript", "Supabase", "Stripe", "Resend", "Vercel", "Firebase", "Google Ads"],
 		summary:
@@ -346,7 +346,7 @@ export const projects: Project[] = [
 			{
 				heading: "What the business does",
 				body: [
-					"I started building sites for local businesses as a freelancer in December 2023 and formalized the work as Peninsula Digital Solutions LLC in September 2025. It's based in North Fair Oaks and serves Redwood City to San Mateo.",
+					"I started building sites for local businesses as a freelancer in December 2023 and formalized the work as Peninsula Digital Solutions LLC in April 2026. My freelance clients moved to the business with me. It's based in North Fair Oaks and serves Redwood City to San Mateo.",
 					"Owners get one local person who designs the site, writes the code, sets up hosting, manages the Google listing and ads, and sends a plain-English report every month, in English or Spanish.",
 				],
 			},
