@@ -1,0 +1,49 @@
+{
+  "hosting": {
+    "public": "v2/out",
+    "cleanUrls": true,
+    "trailingSlash": true,
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "/_next/static/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(webp|png|ico|woff2)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=604800"
+          }
+        ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/work/pi-server{,/**}",
+        "destination": "/work/squirtzcraft/",
+        "type": 301
+      },
+      {
+        "source": "/work/zepeda{,/**}",
+        "destination": "/#clients",
+        "type": 301
+      },
+      {
+        "source": "/work/studybuddy{,/**}",
+        "destination": "/#builds",
+        "type": 301
+      }
+    ]
+  }
+}
